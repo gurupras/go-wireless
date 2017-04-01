@@ -9,7 +9,7 @@ func main() {
 		fmt.Printf("Error retrieve wireless networks:", err)
 		return
 	}
-	
+
 	for _, network := range networks {
 		fmt.Printf("SSID: %v\n", network.SSID)
 	}
