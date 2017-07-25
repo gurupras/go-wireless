@@ -12,10 +12,10 @@ import (
 )
 
 type WirelessScanResult struct {
-	SSID string
-	Mode int
-	Freq int
-	Key  string
+	SSID string `json:"SSID"`
+	Mode int    `json:"mode"`
+	Freq int    `json:"freq"`
+	Key  string `json:"key"`
 }
 
 func GetWirelessNetworks(iface string) ([]*WirelessScanResult, error) {
